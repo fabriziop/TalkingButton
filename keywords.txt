@@ -1,0 +1,31 @@
+#######################################
+# Syntax Coloring Map For TalkingButton
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+TalkingButton	KEYWORD1
+
+#######################################
+# Methods and Functions	(KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+read	KEYWORD2
+readMessage	KEYWORD2
+setMaxReadPeriod	KEYWORD2
+setMinReleased	KEYWORD2
+setMinPressed	KEYWORD2
+setMessageSeparator	KEYWORD2
+setMaxCount	KEYWORD2
+setMaxBitNum	KEYWORD2
+setBinaryHighLowThreshold	KEYWORD2
+setMaxDigitNum	KEYWORD2
+setDurationUnit	KEYWORD2
+strError	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
