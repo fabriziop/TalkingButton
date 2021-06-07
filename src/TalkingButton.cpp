@@ -42,7 +42,7 @@ TalkingButton::TalkingButton(void) {
 
 
 bool TalkingButton::begin(uint8_t aButtonPin,
-    enum pressMode aPressMode=COUNT,bool aPullup=true,bool aPressedLow=true) {
+    enum pressMode aPressMode,bool aPullup,bool aPressedLow) {
 
   // set user/default parameters
   buttonPin = aButtonPin;
@@ -249,7 +249,7 @@ bool TalkingButton::_parseDuration() {
 }
 
 
-bool TalkingButton::_error(enum errorCode errorCode,bool reset=true) {
+bool TalkingButton::_error(enum errorCode errorCode,bool reset) {
 
   error = errorCode;
 
