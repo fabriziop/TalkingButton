@@ -68,7 +68,7 @@ class TalkingButton {
   bool setBinaryHighLowThreshold(uint16_t aBinaryHighLowThreshold);
   bool setMaxDigitNum(uint8_t aMaxDigitNum);
   bool setDurationUnit(uint16_t aDurationUnit);
-  char *strError(void);
+  const char *strError(void);
  
   private:
 

@@ -396,7 +396,7 @@ bool TalkingButton::setDurationUnit(uint16_t aDurationUnit) {
 }
 
 
-char *TalkingButton::strError(void) {
+const char *TalkingButton::strError(void) {
 
   return errorMessages[error];
 
