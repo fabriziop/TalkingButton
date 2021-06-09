@@ -24,9 +24,17 @@
 .- */
 
 #define BUTTON_PIN 5
-#define LED_PIN 13
-#define LED_ON HIGH
-#define LED_OFF LOW
+#ifdef __AVR__
+  #define LED_ON HIGH
+  #define LED_OFF LOW
+  #define LED_PIN 13
+#elif ESP8266
+  #define LED_ON LOW
+  #define LED_OFF HIGH
+  #define LED_PIN 2
+#else
+  #error unsupported processor.
+#endif
 
 #include <TalkingButton.h>
 
@@ -39,6 +47,10 @@ void setup() {
   
   // init talking button pin and press mode
   TB.begin(BUTTON_PIN,TB.BINARY);
+
+  // init LED pin
+  digitalWrite(LED_PIN,LED_OFF);
+  pinMode(LED_PIN,OUTPUT);
 
   // increase message separator from 500 ms (default) to 1000 ms to be more
   // easy with binary mode
