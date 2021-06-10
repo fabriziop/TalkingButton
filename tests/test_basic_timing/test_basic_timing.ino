@@ -210,7 +210,7 @@ void loop() {
 
     // check for message unavailable
     uint8_t message;
-    if (TB.readMessage(message)) {
+    if (TB.readMessage(&message)) {
       Serial.println("readMessage error: message available (should not)");
       isTestError = true;
     }
