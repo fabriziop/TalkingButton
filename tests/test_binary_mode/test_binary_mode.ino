@@ -22,8 +22,15 @@
   
 .- */
 
-#define BUTTON_PIN 3
-#define BUTTON_PIN_DRIVER 4
+#ifdef __AVR__
+  #define BUTTON_PIN 2
+  #define BUTTON_PIN_DRIVER 3
+#elif ESP8266
+  #define BUTTON_PIN D2
+  #define BUTTON_PIN_DRIVER D3
+#else
+  #error TalkingButton: unsuported processor.
+#endif
 
 #include <stdio.h>
 #include <TalkingButton.h>
