@@ -21,6 +21,8 @@ Features
 * No multithread needed
 * No interrupts needed
 * No external dependencies
+* Supports AVR328p, ESP8266, ESP32 processors.
+* Tested on arduino nano, nodeMCU 8266, nodeMCU 32S boards.
 
 
 Quick start
@@ -411,6 +413,6 @@ Copyright
 =========
 
 TalkingButton is authored by Fabrizio Pollastri <mxgbot_a_t_gmail.com>,
-year 2021, under the GNU Lesser General Public License version 3.
+years 2021-2022, under the GNU Lesser General Public License version 3.
 
 .. ==== END

@@ -6,7 +6,7 @@
         "type": "git",
         "url": "https://github.com/fabriziop/TalkingButton.git"
     },
-    "version": "0.3.2",
+    "version": "0.4.0",
     "examples": "examples/*/*.ino",
     "frameworks": "arduino",
     "platforms": [
